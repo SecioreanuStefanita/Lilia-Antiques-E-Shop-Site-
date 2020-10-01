@@ -1,0 +1,226 @@
+@media (min-width: 768px) {
+
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  html {
+    font-size: 50%;
+  }
+}
+
+#content {
+  background-color: #f2f2f2;
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  height: auto;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+#imagine,
+#specificatii {
+  position: relative;
+  display: inline-block;
+  width: 49.5%;
+  margin: 0;
+  height: 40%;
+}
+
+#imagine {
+  left:0;
+}
+
+#specificatii {
+  right: 0;
+  vertical-align: top;
+}
+
+.titlu,
+.tip,
+.pret {
+  font-size: 22px;
+  text-align: left;
+  display: block;
+  margin-left: 4%;
+  padding: 2px;
+  color: #474747;
+}
+
+.titlu{
+  font-family: 'Bentham', serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.tip{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+#specificatii span:first-child{
+  margin-top:5%;
+}
+
+#descriere {
+  display: block;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.imagine {
+  margin-left: 10%;
+  border-radius: 7px 0 0 7px;
+  cursor: pointer;
+}
+
+.imagine:hover{
+  opacity: 0.8;
+}
+
+.page {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  order: 1;
+  margin: auto;
+}
+
+.buyButt {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #142E2F;
+  cursor: pointer;
+}
+
+.buyButt:hover {
+  background-color: #14202f;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+#specificatii hr{
+  opacity: 0.5;
+  margin: 2% 0 2% 0;
+}
+
+.pret{
+  height: 26px;
+    font-family: 'Suranna', serif;
+    font-size: 24px;
+}
+
+#specificatii form{
+  position: absolute;
+  bottom:0;
+  margin-bottom: 15%;
+  margin-left: 4%;
+  width: 30%;
+  height: 8%;
+
+}
+
+#pop_image{
+  display:none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 5%;
+  padding-bottom: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+#pop_content{
+  width: 80%;
+  margin: auto;
+  display:block;
+  max-width: 700px;
+  height: 80%;
+}
+
+#close_pop{
+  position: fixed;
+  top:0;
+  right: 0;
+  margin-top:1%;
+  margin-right: 1%;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  background-color: red;
+  cursor: pointer;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.descProd{
+  display: block;
+  font-size: 24px;
+  margin-left: 4%;
+  margin-right: 1%;
+}
+
+
+#slideshow_container {
+  display: block;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+}
+
+.slide{
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+  cursor:pointer;
+}
+
+#previous,
+#next{
+  display:inline-block;
+  width:5%;
+  height:5%;
+  background-color: #329680;
+  margin-right: 1%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#previous:hover,
+#next:hover{
+  background-color:#175b52;
+}
+
+#previous{
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+#next{
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}

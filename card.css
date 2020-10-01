@@ -1,0 +1,130 @@
+body{
+    --card-color:#E2DACF;
+}
+
+#container {
+    width: 69%;
+    background-color: var(--card-color);
+    display: inline-block;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    width: 20%;
+    height: 64%;
+    display: inline-block;
+    margin: 2% 1% 2% 0;
+    border-radius: 7px 7px 7px 7px;
+    border: 2px solid var(--green-color);
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    vertical-align: top;
+    transition:0.5s all;
+    overflow: hidden;
+}
+
+.img_prod {
+    padding: 25px;
+}
+
+.img_prod img {
+    border-radius: 7px 0 0 7px;
+    width: 100%;
+    height: 50%;
+}
+
+.info_prod{
+    height: 28%;
+}
+
+.numProd,
+.tipProd,
+.descProd {
+    display: block;
+}
+
+.numProd,
+.tipProd {
+    text-align: center;
+    margin: 0 10% 0 10%;
+}
+
+.numProd {
+    font-family: 'Bentham', serif;
+    font-size: 1.7vw;
+    color: #474747;
+    word-break: normal;
+}
+
+.tipProd {
+    margin-top: 5%;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6F4C38;
+    letter-spacing: 0.2em;
+}
+
+.com_prod {
+    position: absolute;
+    height: 20%;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#buton1,#buton2 {
+    width:80%;
+    height: 30%;
+    margin-top:3%;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #142E2F;
+    cursor: pointer;
+}
+
+#buton1:hover,#buton2:hover {
+    background-color:#14202f;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+#buton2{
+    margin-bottom: 3%;
+}
+
+.pretProd {
+    height: 26px;
+    font-family: 'Suranna', serif;
+    font-size: 24px;
+}
+form{
+    margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .card{
+        width:40%;
+    }
+   
+}
+
+@media screen and (max-device-width: 750px) {
+    #container{
+        width:79%;
+    }
+    .card{
+        width: 45%;
+    }
+}
